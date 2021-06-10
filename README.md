@@ -1,16 +1,20 @@
-# news_scrap_app
+# 뉴스기사 스크랩 앱
 
-A new Flutter project.
+뉴스기사를 스크랩하여 화면에 나타내는 앱 프로젝트입니다.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## 사용 라이브러리
 
-A few resources to get you started if this is your first Flutter project:
+http: ^0.13.3
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+group_button: ^2.2.2
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+url_launcher: ^6.0.6
+
+provider: ^5.0.0
+
+cp949: ^1.2.1
+
+web_scraper: - [웹스크랩퍼 라이브러리는 코드를 수정하여 사용했습니다.](https://github.com/tree-victory/packages/tree/master/web_scraper-master)
+
+![](./a.mov)
