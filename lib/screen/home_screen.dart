@@ -108,7 +108,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         buttons: pressName.map((n) => n).toList(),
                         onSelected: (index, isSelected) {
                           setState(() {
-                            selectedNum.add(index);
+                            if (isSelected)
+                              selectedNum.add(index);
+                            else
+                              selectedNum.remove(index);
                           });
                         },
                       ),

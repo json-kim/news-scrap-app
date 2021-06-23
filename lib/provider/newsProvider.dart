@@ -15,9 +15,14 @@ class NewsProvider extends ChangeNotifier {
 
   List<News> get newsData => [..._newsData];
 
+  clearNews() {
+    _newsData.clear();
+    notifyListeners();
+  }
+
   Future scrapNews(List<Press> press) async {
     //기존 기사 제거
-    _newsData.clear();
+    clearNews();
 
     press.forEach((press) async {
       final newsUrl = newsScrapUrl[press];
@@ -45,7 +50,7 @@ class NewsProvider extends ChangeNotifier {
 }
 
 class Test {
-  //TODO: 중앙일보
+  //TODO: 테스트용
   // var webScraper = WebScraper('https://joongang.joins.com');
   // if (await webScraper.loadWebPage('/?cloc=joongang-home-bi')) {
   //   final elements =
